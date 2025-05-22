@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    /* Enable flexbox for body content */
+    justify-content: center;
+    /* Center items horizontally in the body */
+    align-items: flex-start;
+    /* Align items to the top of the body (optional) */
+    min-height: 100vh;
+    /* Ensure body takes at least the full viewport height */
+    margin: 0;
+    /* Reset default body margin */
+    padding-top: 20px;
+    /* Add some top padding for spacing */
+}
+
+#calendar {
+    /* width: 350px; */
+    border-collapse: collapse;
+    font-family: sans-serif;
+    /* A more readable font */
+}
+
+#calendar table {
+    width: 500px;
+}
+
+#calendar th {
+    width: calc(100% / 7);
+    background-color: #f0f0f0;
+    /* Light grey for header background */
+    color: #333;
+    /* Dark grey for header text */
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#calendar td {
+    width: calc(100% / 7);
+    /* border: 1px solid #ccc; */
+    padding: 8px;
+    text-align: center;
+    background-color: #fff;
+    /* Default white background for available days initially */
+    color: #fff;
+    /* Default dark grey for available day text */
+}
+
+#calendar td.unavailable {
+    background-color: #cac5c5;
+    /* Grey for unavailable days */
+    color: #f0f0f0;
+    /* Light grey for unavailable day text */
+}
+
+#calendar td.available {
+    background-color: #248352;
+    /* Your green for available days */
+    color: #fff;
+    /* White text for available days */
+    cursor: pointer;
+    /* Indicate availability on hover (optional) */
+}
+
+#calendar h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #284650;
+    /* Green for the month/year title */
+}
+
+button {
+    background-color: #f0f0f0;
+    color: #284650;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+#calendar-navigation {
+    display: flex;
+    justify-content: center;
+    /* Center the buttons horizontally */
+    margin-top: 10px;
+    /* Add some space between the calendar and buttons */
+}
+
+#calendar-navigation button {
+    /* You can remove the general button styles if you only want these styles here */
+    background-color: #f0f0f0;
+    color: #284650;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    margin: 0 5px;
+    /* Add some horizontal margin between buttons */
+    cursor: pointer;
+}
+
+#calendar-navigation button:hover {
+    background-color: #e0e0e0;
+}
+
+.empty-cell {
+    color: transparent;
+    border: none !important;
+    /* Make the non-breaking space invisible */
+}
