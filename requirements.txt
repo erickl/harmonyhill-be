@@ -1,8 +1,15 @@
 altgraph==0.17.2
 asn1crypto==1.5.1
+certifi==2025.4.26
+charset-normalizer==3.4.2
 future==0.18.2
+icalendar==6.3.1
+idna==3.10
 macholib==1.15.2
 pg8000==1.31.2
 python-dateutil==2.9.0.post0
+requests==2.32.3
 scramp==1.4.5
 six==1.15.0
+tzdata==2025.2
+urllib3==2.4.0

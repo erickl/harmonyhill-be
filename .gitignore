@@ -27,3 +27,6 @@ build/
 # Environment variables or credentials
 .env
 
+*./availability.json
+
+availability.json
